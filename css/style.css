@@ -280,7 +280,7 @@ input[type=number]::-webkit-inner-spin-button,
 .doctors .box-container {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .doctors .box-container .box {
@@ -438,6 +438,74 @@ input[type=number]::-webkit-inner-spin-button,
     z-index: -1;
 }
 
+.blogs .box-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.blogs .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem; 
+}
+
+.blogs .box-container .box .image {
+    height: 20rem;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.blogs .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+    padding-top: 1rem;
+}
+
+.blogs .box-container .box .content .icon {
+    padding-top: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogs .box-container .box .content .icon a {
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+
+.blogs .box-container .box .content .icon a:hover {
+    color: var(--green);
+}
+
+.blogs .box-container .box .content .icon a .fa-calendar {
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.blogs .box-container .box .content h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.blogs .box-container .box .content p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding: 1rem 0;
+}
+
+
 
 
 
@@ -525,6 +593,7 @@ input[type=number]::-webkit-inner-spin-button,
         border-radius: .5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        object-fit: cover;
     }
 }
 
@@ -546,10 +615,11 @@ input[type=number]::-webkit-inner-spin-button,
     
     .doctors .box-container .box img {
         width: 100%;
-        height: 25rem;
+        height: 33rem;
         border: var(--border);
         border-radius: .5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        object-fit: cover;
     }
 }
